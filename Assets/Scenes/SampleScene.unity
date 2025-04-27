@@ -224,7 +224,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!328 &71546205
+--- !u!328 &71546210
 VideoPlayer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -232,7 +232,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71546200}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 8b52940fcf347a44fa7d74abbef2e296, type: 3}
+  m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -245,21 +245,38 @@ VideoPlayer:
   m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
+  m_AudioOutputMode: 1
   m_TargetAudioSources:
-  - {fileID: 0}
+  - {fileID: 71546204}
   m_DirectAudioVolumes:
   - 1
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &71546211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71546200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bba9e217422ce444876fd8815f8949a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 71546210}
+  clips:
+  - {fileID: 32900000, guid: 252b9cf36bf3f4540a603d917d3cbc95, type: 3}
+  - {fileID: 32900000, guid: b6fe132d282b7a644a848a84af8df5c9, type: 3}
+  clipNum: 0
 --- !u!1 &162233910
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,11 +658,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 624207276802153122, guid: 00b2ce0087fb322459fc35430532ed7b,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 71546205}
+      addedObject: {fileID: 71546204}
     - targetCorrespondingSourceObject: {fileID: 624207276802153122, guid: 00b2ce0087fb322459fc35430532ed7b,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 71546204}
+      addedObject: {fileID: 71546210}
+    - targetCorrespondingSourceObject: {fileID: 624207276802153122, guid: 00b2ce0087fb322459fc35430532ed7b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 71546211}
   m_SourcePrefab: {fileID: 100100000, guid: 00b2ce0087fb322459fc35430532ed7b, type: 3}
 --- !u!1 &828986901
 GameObject:
