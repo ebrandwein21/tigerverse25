@@ -232,7 +232,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71546200}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 8b52940fcf347a44fa7d74abbef2e296, type: 3}
+  m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -254,12 +254,28 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &71546209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71546200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda2fec09747e264ca46f466cac8679a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 71546205}
+  clips:
+  - {fileID: 32900000, guid: 983c59b609f6b6742b246ddbd66ec7dc, type: 3}
+  - {fileID: 32900000, guid: 8b52940fcf347a44fa7d74abbef2e296, type: 3}
 --- !u!64 &81675830
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1467,6 +1483,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 71546204}
+    - targetCorrespondingSourceObject: {fileID: 624207276802153122, guid: 00b2ce0087fb322459fc35430532ed7b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 71546209}
   m_SourcePrefab: {fileID: 100100000, guid: 00b2ce0087fb322459fc35430532ed7b, type: 3}
 --- !u!1 &773190230 stripped
 GameObject:
