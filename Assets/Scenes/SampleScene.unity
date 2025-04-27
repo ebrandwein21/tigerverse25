@@ -274,8 +274,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 71546205}
   clips:
-  - {fileID: 32900000, guid: 983c59b609f6b6742b246ddbd66ec7dc, type: 3}
-  - {fileID: 32900000, guid: 8b52940fcf347a44fa7d74abbef2e296, type: 3}
+  - {fileID: 32900000, guid: b6fe132d282b7a644a848a84af8df5c9, type: 3}
+  - {fileID: 32900000, guid: 252b9cf36bf3f4540a603d917d3cbc95, type: 3}
 --- !u!64 &81675830
 MeshCollider:
   m_ObjectHideFlags: 0
