@@ -23,16 +23,10 @@ public class VideoStream : MonoBehaviour
 
     void PlayNextClip()
     {
-        if (clipIndex < clips.Length)
-        {
-            Debug.Log($"Playing video {clipIndex}");
-            player.clip = clips[clipIndex++];
-            player.Play();
-        }
-        else
-        {
-            Debug.Log($"End of playlist reached");
-        }
+        Debug.Log($"Playing video {clipIndex}");
+        player.clip = clips[clipIndex++];
+        player.Play();
+        clipIndex %= clips.Length;
     }
 
     void OnVideoEnd(VideoPlayer source)
